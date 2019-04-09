@@ -32,7 +32,7 @@ public class Upload_pdf extends AppCompatActivity {
 
 //the below line allows us to choose the  file we wont from the file explorer in android
                 Intent intent=new Intent();
-                intent.setType("pdf/*");
+                intent.setType("application/pdf");
                 intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE,true);
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(intent,"select pdfs"),RESULT_LOAD_PDF);
